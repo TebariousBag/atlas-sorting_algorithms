@@ -16,7 +16,6 @@ void insertion_sort_list(listint_t **list)
 		return;
 	}
 	ptr = *list;
-	
 	while (ptr)
 	{
 		ptr = ptr->next; /*start at 2nd element*/
