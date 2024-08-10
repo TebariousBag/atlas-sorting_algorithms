@@ -11,7 +11,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *ptr;
 	listint_t *tmp;
 
-	if (!list)	/*if null*/
+	if (!list || !*list)	/*if null*/
 	{
 		return;
 	}
