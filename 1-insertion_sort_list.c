@@ -11,11 +11,12 @@ void insertion_sort_list(listint_t **list)
 	listint_t *ptr;
 	listint_t *tmp;
 
-	if (!list || !*list)	/*if null*/
+	if (!list)	/*if null*/
 	{
 		return;
 	}
-
+	ptr = *list;
+	
 	while (ptr)
 	{
 		ptr = ptr->next; /*start at 2nd element*/
